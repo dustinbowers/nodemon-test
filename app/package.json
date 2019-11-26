@@ -1,0 +1,16 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "start.dev": "nodemon"
+  },
+  "dependencies": {
+    "ejs": "^2.7.4",
+    "express": "^4.16.2",
+    "redis": "^2.8.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}

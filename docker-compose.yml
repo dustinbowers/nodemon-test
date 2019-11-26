@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  app:
+    build: ./app
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    links:
+      - redis
+    environment:
+      - REDIS_URL=redis
+    depends_on:
+      - redis
+  redis:
+    build: ./redis
+    ports:
+      - "6379:6379"

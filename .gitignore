@@ -1,0 +1,4 @@
+node_modules/
+app/credentials.json
+*.swp
+mongo/

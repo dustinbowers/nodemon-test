@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>View a Track</h1>
+        <div>
+            <form class="form-inline">
+                <input type="text" id="track_field" class="form-control" placeholder="Enter a track ID" />
+                <button type="button" class="btn btn-primary mb-2" onclick="window.location='/track/'+document.getElementById('track_field').value">Get details</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
